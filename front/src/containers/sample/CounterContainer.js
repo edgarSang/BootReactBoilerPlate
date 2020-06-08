@@ -6,7 +6,7 @@ import { increment, decrement } from '../../store/modules/counter';
 const CounterContainer = () => {
   const dispatch = useDispatch();
 
-  const { number } = useSelector(({ counter }) => ({ num: counter.number }));
+  const { number } = useSelector(({ counter }) => ({ number: counter.number }));
 
   const handleIncrease = () => {
     dispatch(increment());
