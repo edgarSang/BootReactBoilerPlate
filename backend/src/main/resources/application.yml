@@ -1,0 +1,22 @@
+#  (localhost:8080/h2-console jdbc: h2:mem:testdb)
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: admin
+    password:
+    data: classpath:data-h2.sql # 시작할때 실행시킬 script
+  jackson:    serialization:      WRITE_DATES_AS_TIMESTAMPS: false
+    time-zone: UTC
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  jpa:
+    properties:      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+logging:  level:    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
