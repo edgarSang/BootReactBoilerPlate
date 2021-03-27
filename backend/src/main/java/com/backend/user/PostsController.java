@@ -15,7 +15,6 @@ public class PostsController {
     Posts getOnePosts(@PathVariable final long postsId) {
         // TODO: 여러개의 DTO 조인할경우 어떻게처리 할지 고민
         // optional을 어떻게 처리할껀지
-        //return postsService.getOnePosts(postsId);
-        return null;
+        return postsService.getOnePosts(postsId).get();
     }
 }
