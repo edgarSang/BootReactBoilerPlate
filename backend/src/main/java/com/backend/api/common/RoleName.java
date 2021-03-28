@@ -1,4 +1,4 @@
-package com.backend.common;
+package com.backend.api.common;
 
 public enum RoleName {
     ROLE_USER,

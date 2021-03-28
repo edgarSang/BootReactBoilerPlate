@@ -1,4 +1,4 @@
-package com.backend.user;
+package com.backend.api.user;
 
 import java.util.Optional;
 
@@ -10,7 +10,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @Service
 public class PostsService {
-    private PostsRepository postsRepository;
+    final private PostsRepository postsRepository;
 
     @Transactional
     public Long save(PostDto dto) {

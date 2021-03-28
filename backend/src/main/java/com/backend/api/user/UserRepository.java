@@ -1,4 +1,4 @@
-package com.backend.user;
+package com.backend.api.user;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.backend.entity.User;
+import com.backend.api.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {

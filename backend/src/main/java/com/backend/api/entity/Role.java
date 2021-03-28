@@ -1,4 +1,4 @@
-package com.backend.entity;
+package com.backend.api.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.NaturalId;
 
-import com.backend.common.RoleName;
+import com.backend.api.common.RoleName;
 
 import lombok.Getter;
 

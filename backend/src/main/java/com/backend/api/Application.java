@@ -1,4 +1,4 @@
-package com.backend;
+package com.backend.api;
 
 
 import java.util.TimeZone;
@@ -13,9 +13,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @EnableJpaAuditing //Jpa Auditing 활성화
 @SpringBootApplication
-@EntityScan(basePackageClasses = { 
+@EntityScan(basePackageClasses = {
 		Application.class,
-		Jsr310JpaConverters.class 
+		Jsr310JpaConverters.class
 })
 public class Application {
 
@@ -23,9 +23,9 @@ public class Application {
 	void init() {
 		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 	}
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-		
+
 	}
 }

@@ -1,4 +1,4 @@
-package com.backend.user;
+package com.backend.api.user;
 
 import lombok.Builder;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.backend.entity;
+package com.backend.api.entity;
 
 import java.time.LocalDateTime;
 
@@ -13,7 +13,7 @@ import lombok.Getter;
 
 @Getter
 @MappedSuperclass
-@EntityListeners(AuditingEntityListener.class)
+//@EntityListeners(AuditingEntityListener.class)
 public abstract class BaseTimeEntity {
 
     @CreatedDate
